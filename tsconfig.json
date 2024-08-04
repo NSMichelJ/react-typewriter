@@ -1,9 +1,9 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "module": "commonjs",
-    "lib": ["dom", "esnext"],
-    "jsx": "react-jsx",
+    "module": "ESNext",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "jsx": "react",
     "declaration": true,
     "outDir": "./dist",
     "rootDir": "./src",
@@ -11,5 +11,6 @@
     "esModuleInterop": true,
     "skipLibCheck": true
   },
-  "include": ["src", "index.ts"]
+  "exclude": ["node_modules", "dist"],
+  "include": ["src"]
 }
