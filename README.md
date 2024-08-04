@@ -28,3 +28,4 @@ export default App;
 | typingSpeed    | number  | 100      | The time between typing each character (in milliseconds).                         |
 | loop           | boolean | false    | If true, the typewriter effect will loop after finishing the text.                |
 | delayOnRestart | number  | 100      | The delay before restarting the typewriter effect when looping (in milliseconds). |
+| cursor         | boolean | false    | If true, a blinking cursor will be displayed at the end of the typing text.       |

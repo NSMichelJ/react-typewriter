@@ -1,0 +1,15 @@
+* {
+  --cursor: "|";
+}
+
+.typewriter::after {
+  margin: 2px;
+  content: var(--cursor);
+  animation: blink 1s infinite step-start;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}

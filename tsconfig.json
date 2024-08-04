@@ -9,8 +9,9 @@
     "rootDir": "./src",
     "strict": true,
     "esModuleInterop": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "plugins": [{ "name": "typescript-plugin-css-modules" }]
   },
   "exclude": ["node_modules", "dist"],
-  "include": ["src"]
+  "include": ["src", "globals.d.ts"]
 }

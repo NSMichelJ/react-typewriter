@@ -1,12 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { TypeWriterProps } from "./types";
 
+import styles from "./typewriter.module.css";
+
 function Typewriter({
   text,
   delay = 100,
   typingSpeed = 100,
   loop = false,
   delayOnRestart = 100,
+  cursor = false,
 }: TypeWriterProps) {
   const [currentText, setCurrentText] = useState<string | string[]>("");
   const [index, setIndex] = useState(0);
@@ -31,7 +34,7 @@ function Typewriter({
     return () => clearTimeout(timeout);
   }, [index, currentDelay, text]);
 
-  return <span>{currentText}</span>;
+  return <span className={cursor ? styles.typewriter : ""}>{currentText}</span>;
 }
 
 export default Typewriter;
