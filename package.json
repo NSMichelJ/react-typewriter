@@ -1,0 +1,26 @@
+{
+  "name": "react-typewriter",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "nsmichelj",
+  "license": "MIT",
+  "description": "React library to create typewriter animations.",
+  "repository": "https://github.com/NSMichelJ/react-typewriter",
+  "peerDependencies": {
+    "react": ">= 18.0.0",
+    "react-dom": ">= 18.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "keywords": [
+    "react",
+    "typescript",
+    "animation",
+    "typewriter effect",
+    "typing animation"
+  ]
+}
