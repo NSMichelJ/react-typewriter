@@ -7,4 +7,6 @@ export interface TypeWriterProps extends React.HTMLAttributes<HTMLSpanElement> {
   loop?: boolean;
   delayOnRestart?: number;
   cursor?: boolean;
+  typingBackspaceAnimation?: boolean;
+  typingBackspaceSpeed?: number;
 }
