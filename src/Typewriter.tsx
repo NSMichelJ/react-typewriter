@@ -8,7 +8,7 @@ function Typewriter({
   delay = 100,
   typingSpeed = 100,
   loop = false,
-  delayOnRestart = 100,
+  delayOnRestart = 1000,
   cursor = false,
   typingBackspaceAnimation = false,
   typingBackspaceSpeed = 100,
