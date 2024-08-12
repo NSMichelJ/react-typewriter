@@ -31,3 +31,5 @@ export default App;
 | cursor                   | boolean | false    | If true, a blinking cursor will be displayed at the end of the typing text.                                                                   |
 | typingBackspaceAnimation | boolean | false    | If true, a backspace animation will be triggered, deleting the text character by character. This will only execute once if `loop` is `false`. |
 | typingBackspaceSpeed     | number  | 100      | The speed of the backspace animation, in milliseconds per character.                                                                          |
+| className                | string  | ""       | CSS class to apply to the root element.                                                                                                       |
+| style                    | object  | {}       | Inline styles to apply to the root element.                                                                                                   |

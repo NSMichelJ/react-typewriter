@@ -12,6 +12,9 @@ function Typewriter({
   cursor = false,
   typingBackspaceAnimation = false,
   typingBackspaceSpeed = 100,
+  className = "",
+  style = {},
+  ...props
 }: TypeWriterProps) {
   const [currentText, setCurrentText] = useState<string | string[]>("");
   const [index, setIndex] = useState(0);
@@ -62,7 +65,14 @@ function Typewriter({
     return () => clearTimeout(timeout);
   }, [index, currentDelay, isDeleting, text, loop, hasLooped]);
 
-  return <span className={cursor ? styles.typewriter : ""}>{currentText}</span>;
+  const combinedClassName =
+    `${cursor ? styles.typewriter : ""} ${className}`.trim();
+
+  return (
+    <span className={combinedClassName} style={style} {...props}>
+      {currentText}
+    </span>
+  );
 }
 
 export default Typewriter;
